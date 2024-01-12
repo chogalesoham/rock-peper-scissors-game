@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.heding {
+  width: 100%;
+  height: 100px;
+  padding: 20px 0px;
+  text-align: center;
+  background-color: rgb(2, 2, 59);
+  color: aqua;
+  position: relative;
+}
+
+.heding h1 {
+  font-size: 3rem;
+  letter-spacing: 15px;
+  font-weight: 800;
+}
+
+.choieses {
+  width: 100%;
+  height: 30vh;
+  margin-top: 3%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10%;
+}
+
+.choies {
+  height: 12rem;
+  width: 12rem;
+  border-radius: 10px;
+  background-color: rgb(2, 2, 59);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.choies:hover {
+  border-radius: 40%;
+  border: 2px solid wheat;
+}
+
+.choies h1 {
+  font-size: 6rem;
+  transition: 0.3s;
+}
+
+.choies h1:hover {
+  transform: scale(1.2);
+}
+
+.conts {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10%;
+}
+
+.conts div span {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.won-btn {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.won-btn button {
+  padding: 15px;
+  background-color: black;
+  color: white;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 10px;
+  filter: drop-shadow(1px 1px 5px black);
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .heding h1 {
+    font-size: 1.3rem;
+    letter-spacing: 5px;
+  }
+
+  .choieses {
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0;
+    height: 50vh;
+  }
+
+  .choies {
+    transform: scale(0.9);
+  }
+
+  .choies h1 {
+    font-size: 4rem;
+  }
+
+  .conts {
+    flex-direction: column;
+    height: 7rem;
+  }
+
+  .conts div span {
+    font-size: 2rem;
+  }
+
+  .won-btn {
+    margin-bottom: 12rem;
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+}
